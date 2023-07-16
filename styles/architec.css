@@ -9,8 +9,8 @@ body{
     border-radius: 8px;
     background: #ff900e;
     color: #ffffff;
-    font-size: 1rem;
-    padding: .5rem;
+    font-size: 1.5rem;
+    padding: 20px 25px;
     font-weight: 500;
     margin-bottom: 20px;
     border: 0;
@@ -51,4 +51,44 @@ nav li a {
 }
 .banner-section img{
     width: 100%;
+}
+
+/* Responsive Styles */
+
+/* Mobile Devices */
+@media screen and (max-width:576px) {
+    header{
+        padding: 30px 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .nav-title{
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 5px;
+    }
+    nav > ul{
+        padding: 0px;
+    }
+
+}
+/* Tablet or Medium Devices */
+
+@media screen and (min-width:577px) and (max-width:960px) {
+    header{
+        padding: 15px 50px;
+    }
+    .nav-title{
+        text-align: center;
+        margin: 5px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav > ul{
+        justify-content: center;
+        padding: 0px;
+    }
+
 }
